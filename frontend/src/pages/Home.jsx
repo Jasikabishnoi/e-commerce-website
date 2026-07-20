@@ -1,20 +1,22 @@
 import React from 'react'
-import hero from '../components/hero';
+import Hero from '../components/Hero';
 import LatestCollection from '../components/LatestCollection';
 import OurPolicy from '../components/OurPolicy';
-import bestseller from '../components/bestseller';
-import newsletterbox from '../components/newsletterbox';
+import Bestseller from '../components/Bestseller';
+import NewsletterBox from '../components/NewsletterBox';
+import Footer from '../components/Footer';
 
-const home = () => {
+const Home = () => {
   return (
     <div>
-      <hero />
-      <LatestCollection/>
-      <bestseller/>
-      <OurPolicy/>
-      <newsletterbox/>
+      <Hero />
+      <LatestCollection />
+      <Bestseller />
+      <OurPolicy />
+      <NewsletterBox />
+      <Footer />
     </div>
   )
 }
 
-export default home;
+export default Home;

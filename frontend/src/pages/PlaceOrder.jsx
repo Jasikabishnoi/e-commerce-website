@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { shopContext } from '../context/shopContext'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 
-const Placeorder = () => {
+const PlaceOrder = () => {
     const { cartItems, products, currency, delivery_fee, getTotalAmount } = useContext(shopContext)
     const [formData, setFormData] = useState({
         name: '',
@@ -146,4 +146,4 @@ const Placeorder = () => {
     )
 }
 
-export default Placeorder
+export default PlaceOrder
