@@ -1,4 +1,5 @@
 import React from 'react'
+import { assets } from '../assets/assets'
 
 const OurPolicy = () => {
   return (
@@ -6,7 +7,7 @@ const OurPolicy = () => {
         <div>
             <img src={assets.exchange_icon} className='w-12 m-auto mb-5 ' />
             <p className=' font-semibold '>Easy Exchange Policy</p>
-            <p  className='text-gray-400'>We offer haffle easy exchange policy </p>
+            <p  className='text-gray-400'>We offer hassle free easy exchange policy </p>
         </div>
          <div>
             <img src={assets.quality_icon} className='w-12 m-auto mb-5 ' />
@@ -14,7 +15,7 @@ const OurPolicy = () => {
             <p  className='text-gray-400'>We provide 7 days easy return policy  </p>
         </div>
          <div>
-            <img src={assets.support.icon} className='w-12 m-auto mb-5 ' />
+            <img src={assets.support_icon} className='w-12 m-auto mb-5 ' />
             <p className=' font-semibold '>Best customer support </p>
             <p  className='text-gray-400'>We provide 24/7 Customer support   </p>
         </div>
