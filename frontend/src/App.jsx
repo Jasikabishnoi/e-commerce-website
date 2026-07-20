@@ -1,6 +1,5 @@
 import React from 'react'
 import { Routes, Route} from 'react-router-dom'
-// import Navbar from './components/navbar'
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Collection from "./pages/Collection";
@@ -8,29 +7,25 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Orders from "./pages/Orders";
-import Placeorder from "./pages/Placeorder";
+import PlaceOrder from "./pages/PlaceOrder";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
-import hero from './components/hero';
 
-
- const App = ()=>{
+const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path='/' element = {<Home/>} />
-        <Route path='/collection' element = {<Collection/>} />
-        <Route path='/login' element = {<Login/>} />
-        <Route path='/about' element = {<About/>} />
-        <Route path='/cart' element = {<Cart/>} />
-        <Route path='/orders' element = {<Orders/>} />
-        <Route path='/placeorder' element = {<Placeorder/>} />
-        <Route path='/product/:productId' element = {<Product/>} />
-        <Route path='/contact' element = {<Contact/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/collection' element={<Collection />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/orders' element={<Orders />} />
+        <Route path='/placeorder' element={<PlaceOrder />} />
+        <Route path='/product/:productId' element={<Product />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
-      
-
     </div>
   )
 }
