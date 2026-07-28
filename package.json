@@ -1,0 +1,11 @@
+{
+  "name": "e-commerce-app",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:frontend": "npm --prefix frontend run dev -- --host 0.0.0.0",
+    "dev:backend": "npm --prefix backend run dev",
+    "start": "npm --prefix backend run start"
+  }
+}
