@@ -31,6 +31,10 @@ app.get('/api/products', (req, res) => {
   ]);
 });
 
-app.listen(port, () => {
-  console.log(`Backend running on http://localhost:${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Backend running on http://localhost:${port}`);
+  });
+}
+
+module.exports = app;
